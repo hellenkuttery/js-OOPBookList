@@ -31,10 +31,10 @@ UI.prototype.showMessage = function (message, className) {
   const mymessage = document.createTextNode(message);
   div.appendChild(mymessage);
 
-  const container = document.querySelector(".container");
-  const form = document.querySelector("#book-form");
+  const container = document.querySelector(".col");
+  const table = document.querySelector(".table");
 
-  container.insertBefore(div, form);
+  container.insertBefore(div, table);
 
   setTimeout(function () {
     document.querySelector(".alert").remove();
